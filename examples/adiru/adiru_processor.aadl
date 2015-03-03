@@ -1,14 +1,10 @@
 package ADIRU_processor
 public
 
-  with POK;
   with ARINC653;
   with partitions;
 
   processor powerpc
-  properties
-    POK::Architecture => x86;
-    POK::BSP => x86_qemu;
   end powerpc;
 
   processor implementation powerpc.impl
