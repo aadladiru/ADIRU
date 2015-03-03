@@ -1,7 +1,6 @@
 package threads
 public
 
-with POK;
 with ARINC653; 
 with SHM_DataType;
 with subprograms; 
