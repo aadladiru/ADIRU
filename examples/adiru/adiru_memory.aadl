@@ -1,7 +1,6 @@
 package ADIRU_memory
 public
 
-with POK;
 with ARINC653;
 
 memory partition_memory
