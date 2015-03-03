@@ -1,7 +1,7 @@
 package partitions
 public
 
-  with POK;
+
   with ARINC653;
   with threads;
   with SHM_DataType;
@@ -10,7 +10,6 @@ public
   virtual processor acc_partition
   properties 
     --Scheduling_Protocol => (FixedTimeline);
-    POK::Additional_Features => (console);
     ARINC653::DAL => LEVEL_A; -- XXX Review value
   end acc_partition;
 
@@ -20,7 +19,6 @@ public
   virtual processor acc_hm_partition
   properties
     --Scheduling_Protocol => (FixedTimeline);
-    POK::Additional_Features => (console);
     ARINC653::DAL => LEVEL_A; -- XXX Review value
   end acc_hm_partition;
 
@@ -30,7 +28,6 @@ public
   virtual processor ADIRUp_partition
   properties
     --Scheduling_Protocol => (FixedTimeline);
-    POK::Additional_Features => (console);
     ARINC653::DAL => LEVEL_A; -- XXX Review value
   end ADIRUp_partition;
 
@@ -40,7 +37,6 @@ public
   virtual processor SHM_partition
   properties
     --Scheduling_Protocol => (FixedTimeline);
-    POK::Additional_Features => (console);
     ARINC653::DAL => LEVEL_A; -- XXX Review value
   end SHM_partition;
 
