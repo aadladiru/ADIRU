@@ -2,7 +2,6 @@ package ADIRU
 public
 
   with ARINC653;
-  with POK;
   with ADIRU_memory;
   with partitions;
   with ADIRU_processor;
