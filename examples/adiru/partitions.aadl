@@ -121,27 +121,27 @@ public
 
   process implementation acc_process.impl
   subcomponents
-    acc1: thread threads::acc1_dataOutput.impl;
-    acc2: thread threads::acc2_dataOutput.impl;
-    acc3: thread threads::acc3_dataOutput.impl;
-    acc4: thread threads::acc4_dataOutput.impl;
-    acc5: thread threads::acc5_dataOutput.impl;
-    acc6: thread threads::acc6_dataOutput.impl;
+    acc1: thread threads::acc_th.impl1;
+    acc2: thread threads::acc_th.impl2;
+    acc3: thread threads::acc_th.impl3;
+    acc4: thread threads::acc_th.impl4;
+    acc5: thread threads::acc_th.impl5;
+    acc6: thread threads::acc_th.impl6;
 
   connections
-    C1: port acc1_event_in->acc1.acc1_command_in;
-    C2: port acc2_event_in->acc2.acc2_command_in;
+    C1: port acc1_event_in->acc1.acc_command_in;
+    C2: port acc2_event_in->acc2.acc_command_in;
     C3: port acc3_event_in->acc3.acc_command_in;
     C4: port acc4_event_in->acc4.acc_command_in;
     C5: port acc5_event_in->acc5.acc_command_in;
     C6: port acc6_event_in->acc6.acc_command_in;
 
-    C7: port acc1.acc1out->acc1_output; --{Timing=>Delayed;};
-    C8: port acc2.acc2out->acc2_output;
-    C9: port acc3.accout->acc3_output;
-    C10: port acc4.accout->acc4_output; --{Timing=>Delayed;};
-    C11: port acc5.accout->acc5_output;
-    C12: port acc6.accout->acc6_output;
+    C7: port acc1.acc_out->acc1_output; --{Timing=>Delayed;};
+    C8: port acc2.acc_out->acc2_output;
+    C9: port acc3.acc_out->acc3_output;
+    C10: port acc4.acc_out->acc4_output; --{Timing=>Delayed;};
+    C11: port acc5.acc_out->acc5_output;
+    C12: port acc6.acc_out->acc6_output;
   end acc_process.impl;
 
   process ADIRUp_process
